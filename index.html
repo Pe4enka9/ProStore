@@ -1,0 +1,854 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Pro:Store</title>
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <img src="assets/icons/logo.svg" alt="Логотип">
+
+        <nav>
+            <div class="nav-elem navigation">
+                <a href="#">iPhone</a>
+                <a href="#">Б/У устройства</a>
+                <a href="#">Консоли</a>
+                <a href="#">Watch</a>
+
+                <div class="nav-elem catalog-icon">
+                    <img src="assets/icons/catalog.svg" alt="Каталог">
+                    <a href="#">Каталог</a>
+                </div>
+            </div>
+
+            <div class="nav-elem categories">
+                <div class="separator"></div>
+
+                <a href="#">Dyson</a>
+                <a href="#">Аксессуары</a>
+
+                <div class="separator"></div>
+            </div>
+        </nav>
+
+        <div class="another">
+            <div class="nav-elem favorite">
+                <a href="#">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.7334 10.333C12.5251 10.333 10.7334 12.1247 10.7334 14.333C10.7334 15.083 10.9417 15.7913 11.3167 16.3913C12.0084 17.5497 13.2751 18.333 14.7334 18.333C16.1917 18.333 17.4667 17.5497 18.1501 16.3913C18.5167 15.7913 18.7334 15.083 18.7334 14.333C18.7334 12.1247 16.9417 10.333 14.7334 10.333ZM16.7167 13.808L14.5834 15.7747C14.4667 15.883 14.3084 15.9413 14.1584 15.9413C14.0001 15.9413 13.8417 15.883 13.7167 15.758L12.7334 14.7747C12.4917 14.533 12.4917 14.133 12.7334 13.8913C12.9751 13.6497 13.3751 13.6497 13.6167 13.8913L14.1751 14.4497L15.8667 12.883C16.1167 12.6497 16.5167 12.6663 16.7501 12.9163C16.9834 13.1747 16.9667 13.5747 16.7167 13.808Z"
+                              fill="white"/>
+                        <path id="favorite"
+                              d="M18.7331 7.27552C18.7331 8.26719 18.5747 9.18385 18.2997 10.0339C18.2497 10.2089 18.0414 10.2589 17.8914 10.1505C16.9831 9.47552 15.8747 9.11719 14.7331 9.11719C11.8414 9.11719 9.48308 11.4755 9.48308 14.3672C9.48308 15.2672 9.71641 16.1505 10.1581 16.9339C10.2914 17.1672 10.1331 17.4672 9.88308 17.3755C7.87475 16.6922 3.81641 14.2005 2.49975 10.0339C2.22475 9.18385 2.06641 8.26719 2.06641 7.27552C2.06641 4.70052 4.14141 2.61719 6.69975 2.61719C8.20808 2.61719 9.55808 3.35052 10.3997 4.47552C11.2414 3.35052 12.5914 2.61719 14.0997 2.61719C16.6581 2.61719 18.7331 4.70052 18.7331 7.27552Z"
+                              fill="white"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="nav-elem cart">
+                <a href="#">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.742 18.75C14.5474 18.75 15.2004 18.0971 15.2004 17.2917C15.2004 16.4863 14.5474 15.8333 13.742 15.8333C12.9366 15.8333 12.2837 16.4863 12.2837 17.2917C12.2837 18.0971 12.9366 18.75 13.742 18.75Z"
+                              fill="white"/>
+                        <path d="M7.07503 18.75C7.88043 18.75 8.53337 18.0971 8.53337 17.2917C8.53337 16.4863 7.88043 15.8333 7.07503 15.8333C6.26962 15.8333 5.6167 16.4863 5.6167 17.2917C5.6167 18.0971 6.26962 18.75 7.07503 18.75Z"
+                              fill="white"/>
+                        <path d="M4.23337 3.28332L4.0667 5.32499C4.03337 5.71666 4.3417 6.04166 4.73337 6.04166H17.4917C17.8417 6.04166 18.1334 5.77499 18.1584 5.42499C18.2667 3.94999 17.1417 2.74999 15.6667 2.74999H5.42503C5.3417 2.38332 5.17503 2.03332 4.9167 1.74166C4.50003 1.29999 3.9167 1.04166 3.3167 1.04166H1.8667C1.52503 1.04166 1.2417 1.32499 1.2417 1.66666C1.2417 2.00832 1.52503 2.29166 1.8667 2.29166H3.3167C3.57503 2.29166 3.8167 2.39999 3.9917 2.58332C4.1667 2.77499 4.25003 3.02499 4.23337 3.28332Z"
+                              fill="white"/>
+                        <path d="M17.2921 7.29166H4.50874C4.15874 7.29166 3.8754 7.55832 3.84207 7.89999L3.54207 11.525C3.4254 12.95 4.54207 14.1667 5.96707 14.1667H15.2338C16.4838 14.1667 17.5838 13.1417 17.6754 11.8917L17.9504 7.99999C17.9838 7.61666 17.6838 7.29166 17.2921 7.29166Z"
+                              fill="white"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="social">
+                <a href="#">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_22_108)">
+                            <path d="M15 0H14.9999C6.71568 0 0 6.71568 0 14.9999V15C0 23.2842 6.71568 29.9999 14.9999 29.9999H15C23.2842 29.9999 29.9999 23.2842 29.9999 15V14.9999C29.9999 6.71568 23.2842 0 15 0Z"
+                                  fill="#292929"/>
+                            <path d="M14.9968 12.6662C13.7114 12.6662 12.6625 13.7151 12.6625 15.0005C12.6625 16.2859 13.7114 17.3348 14.9968 17.3348C16.2822 17.3348 17.3311 16.2859 17.3311 15.0005C17.3311 13.7151 16.2822 12.6662 14.9968 12.6662ZM21.998 15.0005C21.998 14.0338 22.0067 13.0759 21.9524 12.111C21.8982 10.9903 21.6425 9.99561 20.823 9.17606C20.0017 8.35475 19.0087 8.10083 17.888 8.04654C16.9213 7.99225 15.9634 8.00101 14.9985 8.00101C14.0319 8.00101 13.074 7.99225 12.1091 8.04654C10.9883 8.10083 9.99366 8.3565 9.17411 9.17606C8.35279 9.99736 8.09887 10.9903 8.04459 12.111C7.9903 13.0777 7.99906 14.0356 7.99906 15.0005C7.99906 15.9654 7.9903 16.925 8.04459 17.89C8.09887 19.0107 8.35454 20.0054 9.17411 20.8249C9.99541 21.6462 10.9883 21.9002 12.1091 21.9545C13.0757 22.0088 14.0336 22 14.9985 22C15.9652 22 16.9231 22.0088 17.888 21.9545C19.0087 21.9002 20.0034 21.6445 20.823 20.8249C21.6442 20.0036 21.8982 19.0107 21.9524 17.89C22.0085 16.925 21.998 15.9671 21.998 15.0005ZM14.9968 18.5922C13.0092 18.5922 11.4051 16.9881 11.4051 15.0005C11.4051 13.0129 13.0092 11.4088 14.9968 11.4088C16.9844 11.4088 18.5885 13.0129 18.5885 15.0005C18.5885 16.9881 16.9844 18.5922 14.9968 18.5922ZM18.7356 12.1005C18.2715 12.1005 17.8967 11.7258 17.8967 11.2617C17.8967 10.7977 18.2715 10.4229 18.7356 10.4229C19.1996 10.4229 19.5743 10.7977 19.5743 11.2617C19.5745 11.3719 19.5529 11.481 19.5109 11.5829C19.4687 11.6847 19.407 11.7772 19.329 11.8552C19.2511 11.9331 19.1586 11.9949 19.0567 12.037C18.9549 12.0791 18.8458 12.1007 18.7356 12.1005Z"
+                                  fill="white"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_22_108">
+                                <rect width="30" height="30" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+
+                <a href="#">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_22_111)">
+                            <path d="M15 0H14.9999C6.71568 0 0 6.71568 0 14.9999V15C0 23.2842 6.71568 29.9999 14.9999 29.9999H15C23.2842 29.9999 29.9999 23.2842 29.9999 15V14.9999C29.9999 6.71568 23.2842 0 15 0Z"
+                                  fill="#292929"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M7.35712 14.5289C11.4914 12.7276 14.2483 11.5401 15.6277 10.9664C19.5662 9.32824 20.3846 9.04368 20.918 9.03428C21.0353 9.03221 21.2976 9.06129 21.4675 9.19916C21.611 9.31558 21.6505 9.47285 21.6694 9.58323C21.6883 9.69361 21.7118 9.94505 21.6931 10.1415C21.4797 12.384 20.5562 17.826 20.0863 20.3376C19.8875 21.4004 19.4961 21.7567 19.1171 21.7916C18.2936 21.8674 17.6682 21.2473 16.8705 20.7244C15.6223 19.9062 14.9172 19.3969 13.7056 18.5985C12.3054 17.6758 13.2131 17.1686 14.011 16.3398C14.2199 16.1229 17.8485 12.8224 17.9188 12.5229C17.9276 12.4855 17.9357 12.3459 17.8528 12.2722C17.7699 12.1985 17.6475 12.2237 17.5592 12.2438C17.434 12.2722 15.44 13.5901 11.5771 16.1976C11.0111 16.5863 10.4985 16.7757 10.0392 16.7657C9.53279 16.7548 8.55874 16.4794 7.83463 16.2441C6.94648 15.9554 6.2406 15.8027 6.30207 15.3124C6.33409 15.057 6.68577 14.7959 7.35712 14.5289Z"
+                                  fill="white"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_22_111">
+                                <rect width="30" height="30" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+
+                <a href="#">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_22_114)">
+                            <path d="M14.9995 0H14.9994C6.7152 0 -0.000488281 6.71568 -0.000488281 14.9999V15C-0.000488281 23.2842 6.7152 29.9999 14.9994 29.9999H14.9995C23.2837 29.9999 29.9994 23.2842 29.9994 15V14.9999C29.9994 6.71568 23.2837 0 14.9995 0Z"
+                                  fill="#292929"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M22.1942 11.4094C22.3057 11.0379 22.1942 10.7778 21.6741 10.7778H19.9404C19.4945 10.7778 19.2964 11.0131 19.1849 11.2732C19.1849 11.2732 18.3057 13.428 17.0549 14.815C16.6462 15.2237 16.4729 15.3475 16.25 15.3475C16.1385 15.3475 15.9775 15.2237 15.9775 14.8521V11.4094C15.9775 10.9636 15.8537 10.7778 15.4822 10.7778H12.7577C12.4853 10.7778 12.3119 10.9884 12.3119 11.1741C12.3119 11.5952 12.9311 11.6942 13.0054 12.8583V15.4094C13.0054 15.9667 12.9063 16.0658 12.6834 16.0658C12.1014 16.0658 10.6648 13.911 9.82271 11.4342C9.64934 10.976 9.48835 10.7778 9.04253 10.7778H7.30878C6.81343 10.7778 6.71436 11.0131 6.71436 11.2732C6.71436 11.7314 7.29639 14.01 9.45119 17.0193C10.8877 19.075 12.9063 20.1896 14.7391 20.1896C15.8413 20.1896 15.9775 19.9419 15.9775 19.5209V17.9605C15.9775 17.4651 16.0766 17.3661 16.4357 17.3661C16.6958 17.3661 17.1292 17.4899 18.1571 18.4806C19.3336 19.6571 19.5317 20.1896 20.188 20.1896H21.9218C22.4171 20.1896 22.6648 19.9419 22.5162 19.4589C22.3552 18.976 21.7979 18.2701 21.0549 17.428C20.6462 16.945 20.0394 16.4373 19.8661 16.1772C19.606 15.8428 19.6803 15.6942 19.8661 15.4094C19.8661 15.397 21.9837 12.4249 22.1942 11.4094Z"
+                                  fill="white"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_22_114">
+                                <rect width="30" height="30" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="header-slogan">
+        <div class="slogan">
+            <div>Доставка по всей России</div>
+            <h1>Техника, которая делает вашу жизнь проще</h1>
+            <div>Делайте больше с технологиями, созданными для вас</div>
+        </div>
+
+        <div class="slogan-image">
+            <img src="assets/images/slogan-image.svg" alt="Картинка слогана">
+        </div>
+    </div>
+
+    <main>
+        <section class="catalog">
+            <a href="#" class="catalog-card"
+               style="background: #fff url('assets/images/iphone.png') no-repeat top center / contain;">
+                <h3>iPhone</h3>
+                <div>от 60 000 &#8381;</div>
+            </a>
+
+            <a href="#" class="catalog-card"
+               style="background: #fff url('assets/images/macbook.png') no-repeat top center / contain;">
+                <h3>MacBook</h3>
+                <div>от 86 000 &#8381;</div>
+            </a>
+
+            <a href="#" class="catalog-card"
+               style="background: #fff url('assets/images/audio.png') no-repeat top center / contain;">
+                <h3>Аудио</h3>
+                <div>от 4 500 &#8381;</div>
+            </a>
+
+            <a href="#" class="catalog-card"
+               style="background: #fff url('assets/images/watch.png') no-repeat top center / contain;">
+                <h3>Watch</h3>
+                <div>от 26 000 &#8381;</div>
+            </a>
+
+            <a href="#" class="catalog-card"
+               style="background: #fff url('assets/images/ipad.png') no-repeat top center / contain;">
+                <h3>iPad</h3>
+                <div>от 40 000 &#8381;</div>
+            </a>
+
+            <a href="#" class="catalog-card"
+               style="background: #fff url('assets/images/console.png') no-repeat top center / contain;">
+                <h3>Консоли</h3>
+                <div>от 30 000 &#8381;</div>
+            </a>
+
+            <a href="#" class="catalog-card"
+               style="background: #fff url('assets/images/second-hand.png') no-repeat top center / contain;">
+                <h3>Б/У устройства</h3>
+                <div>от 26 000 &#8381;</div>
+            </a>
+
+            <a href="#" class="catalog-card"
+               style="background: #fff url('assets/images/dyson.png') no-repeat top center / contain;">
+                <h3>Dyson</h3>
+                <div>от 50 000 &#8381;</div>
+            </a>
+
+            <a href="#" class="catalog-card"
+               style="background: #fff url('assets/images/accessories.png') no-repeat top center / contain;">
+                <h3>Аксессуары</h3>
+                <div>от 3 000 &#8381;</div>
+            </a>
+        </section>
+
+        <section class="trade">
+            <div class="trade-in"
+                 style="background: #fff url('assets/images/trade-in.png') no-repeat right 30px top / contain;">
+                <div class="trade-in-content">
+                    <div class="trade-in-text">
+                        <h3>Trade-in</h3>
+                        <div>Старое устройство нам — скидку на новое вам.</div>
+                    </div>
+
+                    <a href="#" class="default-button">Перейти в раздел</a>
+                </div>
+            </div>
+
+            <div class="installment-plan"
+                 style="background: #fff url('assets/images/installment-plan.png') no-repeat right bottom -5px / contain;">
+                <div class="installment-plan-content">
+                    <div class="installment-plan-text">
+                        <h3>Рассрочка от партнеров</h3>
+                        <div>Без первоначальных взносов. От 3 до 36 месяцев.</div>
+                    </div>
+
+                    <a href="#" class="border-button">Рассчитать рассрочку</a>
+                </div>
+
+                <div class="image-container">
+                    <img src="assets/icons/partners.svg" alt="Партнеры">
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-products">
+            <h2>Популярные товары</h2>
+
+            <div class="popular-catalog">
+                <div class="popular-card">
+                    <div class="popular-image-container">
+                        <img src="assets/images/airpods2.png" alt="Наушники AirPods 2">
+                        <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_30_76)">
+                                <path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z"
+                                      stroke="#7678ED" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_30_76">
+                                    <rect width="21" height="18" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <h3>Наушники AirPods 2</h3>
+
+                    <div class="price">
+                        14 000 &#8381;
+                        <span>19 000 &#8381;</span>
+                    </div>
+
+                    <div class="buttons">
+                        <a href="#" class="more-button">Подробнее</a>
+                        <a href="#" class="default-button">Купить</a>
+                    </div>
+                </div>
+
+                <div class="popular-card">
+                    <div class="popular-image-container">
+                        <img src="assets/images/airpods3.png" alt="Наушники AirPods 3">
+                        <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_30_76)">
+                                <path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z"
+                                      stroke="#7678ED" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_30_76">
+                                    <rect width="21" height="18" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <h3>Наушники AirPods 3</h3>
+
+                    <div class="price">
+                        18 000 &#8381;
+                        <span>24 000 &#8381;</span>
+                    </div>
+
+                    <div class="buttons">
+                        <a href="#" class="more-button">Подробнее</a>
+                        <a href="#" class="default-button">Купить</a>
+                    </div>
+                </div>
+
+                <div class="popular-card">
+                    <div class="popular-image-container">
+                        <img src="assets/images/iphone13.png" alt="iPhone 13, 128 ГБ">
+                        <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_30_76)">
+                                <path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z"
+                                      stroke="#7678ED" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_30_76">
+                                    <rect width="21" height="18" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <h3>iPhone 13, 128 ГБ</h3>
+
+                    <div class="price">
+                        57 000 &#8381;
+                        <span>75 000 &#8381;</span>
+                    </div>
+
+                    <div class="buttons">
+                        <a href="#" class="more-button">Подробнее</a>
+                        <a href="#" class="default-button">Купить</a>
+                    </div>
+                </div>
+
+                <div class="popular-card">
+                    <div class="popular-image-container">
+                        <img src="assets/images/playstation5.png"
+                             alt="Игровая приставка Sony PlayStation 5 Slim Digital, 1 ТБ SSD с дисководом">
+                        <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_30_76)">
+                                <path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z"
+                                      stroke="#7678ED" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_30_76">
+                                    <rect width="21" height="18" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <h3>Игровая приставка Sony PlayStation 5 Slim Digital, 1 ТБ SSD с дисководом</h3>
+
+                    <div class="price">
+                        58 000 &#8381;
+                        <span>76 000 &#8381;</span>
+                    </div>
+
+                    <div class="buttons">
+                        <a href="#" class="more-button">Подробнее</a>
+                        <a href="#" class="default-button">Купить</a>
+                    </div>
+                </div>
+
+                <div class="popular-card">
+                    <div class="popular-image-container">
+                        <img src="assets/images/dyson_product.png"
+                             alt="Стайлер Dyson AirWrap Complete Long HS05 Ceramic Pink">
+                        <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_30_76)">
+                                <path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z"
+                                      stroke="#7678ED" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_30_76">
+                                    <rect width="21" height="18" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <h3>Стайлер Dyson AirWrap Complete Long HS05 Ceramic Pink</h3>
+
+                    <div class="price">
+                        60 000 &#8381;
+                        <span>77 000 &#8381;</span>
+                    </div>
+
+                    <div class="buttons">
+                        <a href="#" class="more-button">Подробнее</a>
+                        <a href="#" class="default-button">Купить</a>
+                    </div>
+                </div>
+
+                <div class="popular-card">
+                    <div class="popular-image-container">
+                        <img src="assets/images/iphone14.png" alt="iPhone 14, 128 ГБ">
+                        <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_30_76)">
+                                <path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z"
+                                      stroke="#7678ED" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_30_76">
+                                    <rect width="21" height="18" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <h3>iPhone 14, 128 ГБ</h3>
+
+                    <div class="price">
+                        65 000 &#8381;
+                        <span>85 000 &#8381;</span>
+                    </div>
+
+                    <div class="buttons">
+                        <a href="#" class="more-button">Подробнее</a>
+                        <a href="#" class="default-button">Купить</a>
+                    </div>
+                </div>
+
+                <div class="popular-card">
+                    <div class="popular-image-container">
+                        <img src="assets/images/iphone15.png" alt="iPhone 15, 128 ГБ">
+                        <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_30_76)">
+                                <path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z"
+                                      stroke="#7678ED" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_30_76">
+                                    <rect width="21" height="18" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <h3>iPhone 15, 128 ГБ</h3>
+
+                    <div class="price">
+                        77 000 &#8381;
+                        <span>101 000 &#8381;</span>
+                    </div>
+
+                    <div class="buttons">
+                        <a href="#" class="more-button">Подробнее</a>
+                        <a href="#" class="default-button">Купить</a>
+                    </div>
+                </div>
+
+                <div class="popular-card">
+                    <div class="popular-image-container">
+                        <img src="assets/images/iphone16.png" alt="iPhone 16, 128 ГБ">
+                        <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_30_76)">
+                                <path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z"
+                                      stroke="#7678ED" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_30_76">
+                                    <rect width="21" height="18" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <h3>iPhone 16, 128 ГБ</h3>
+
+                    <div class="price">
+                        94 000 &#8381;
+                        <span>123 000 &#8381;</span>
+                    </div>
+
+                    <div class="buttons">
+                        <a href="#" class="more-button">Подробнее</a>
+                        <a href="#" class="default-button">Купить</a>
+                    </div>
+                </div>
+
+                <div class="popular-card">
+                    <div class="popular-image-container">
+                        <img src="assets/images/iphone15_pro.png" alt="iPhone 15 Pro, 128 ГБ">
+                        <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_30_76)">
+                                <path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z"
+                                      stroke="#7678ED" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_30_76">
+                                    <rect width="21" height="18" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <h3>iPhone 15 Pro, 128 ГБ</h3>
+
+                    <div class="price">
+                        105 000 &#8381;
+                        <span>137 000 &#8381;</span>
+                    </div>
+
+                    <div class="buttons">
+                        <a href="#" class="more-button">Подробнее</a>
+                        <a href="#" class="default-button">Купить</a>
+                    </div>
+                </div>
+
+                <div class="popular-card">
+                    <div class="popular-image-container">
+                        <img src="assets/images/iphone15_pro.png" alt="iPhone 15 Pro, 256 ГБ">
+                        <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_30_76)">
+                                <path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z"
+                                      stroke="#7678ED" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_30_76">
+                                    <rect width="21" height="18" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <h3>iPhone 15 Pro, 256 ГБ</h3>
+
+                    <div class="price">
+                        115 000 &#8381;
+                        <span>150 000 &#8381;</span>
+                    </div>
+
+                    <div class="buttons">
+                        <a href="#" class="more-button">Подробнее</a>
+                        <a href="#" class="default-button">Купить</a>
+                    </div>
+                </div>
+
+                <div class="popular-card">
+                    <div class="popular-image-container">
+                        <img src="assets/images/iphone15_pro.png" alt="iPhone 15 Pro Max, 256 ГБ">
+                        <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_30_76)">
+                                <path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z"
+                                      stroke="#7678ED" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_30_76">
+                                    <rect width="21" height="18" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <h3>iPhone 15 Pro Max, 256 ГБ</h3>
+
+                    <div class="price">
+                        123 000 &#8381;
+                        <span>160 000 &#8381;</span>
+                    </div>
+
+                    <div class="buttons">
+                        <a href="#" class="more-button">Подробнее</a>
+                        <a href="#" class="default-button">Купить</a>
+                    </div>
+                </div>
+
+                <div class="popular-card">
+                    <div class="popular-image-container">
+                        <img src="assets/images/iphone15_pro.png" alt="iPhone 15 Pro Max, 512 ГБ">
+                        <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_30_76)">
+                                <path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z"
+                                      stroke="#7678ED" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_30_76">
+                                    <rect width="21" height="18" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <h3>iPhone 15 Pro Max, 512 ГБ</h3>
+
+                    <div class="price">
+                        158 000 &#8381;
+                        <span>206 000 &#8381;</span>
+                    </div>
+
+                    <div class="buttons">
+                        <a href="#" class="more-button">Подробнее</a>
+                        <a href="#" class="default-button">Купить</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories-for">
+            <a href="#" class="category-for">
+                <div class="category-for-text">
+                    <h2>Для геймеров</h2>
+                    <div>Консоли для захватывающих игр и грандиозных побед.</div>
+                </div>
+
+                <div class="categories-for-image-container">
+                    <img src="assets/images/playstation5_category.png" alt="Playstation 5">
+                </div>
+            </a>
+
+            <a href="#" class="category-for">
+                <div class="category-for-text">
+                    <h2>Для заботы о технике</h2>
+                    <div>Аксессуары для устройств и раскрытия их способностей.</div>
+                </div>
+
+                <div class="categories-for-image-container">
+                    <img src="assets/images/care_of_technology.png" alt="Забота о технике">
+                </div>
+            </a>
+
+            <a href="#" class="category-for">
+                <div class="category-for-text">
+                    <h2>Для красоты и здоровья</h2>
+                    <div>Техника Dyson для вашего безупречного стиля.</div>
+                </div>
+
+                <div class="categories-for-image-container">
+                    <img src="assets/images/dyson_category.png" alt="Красота и здоровье">
+                </div>
+            </a>
+
+            <a href="#" class="category-for">
+                <div class="category-for-text">
+                    <h2>Для влюбленных в музыку</h2>
+                    <div>Почувствуйте идеальное звуковое сопровождение!</div>
+                </div>
+
+                <div class="categories-for-image-container">
+                    <img src="assets/images/love_music.png" alt="Любовь к музыке">
+                </div>
+            </a>
+        </section>
+
+        <section class="second-hand">
+            <div class="second-hand-content">
+                <div class="second-hand-text">
+                    <h2>Б/У устройства</h2>
+                    <div>Тщательно отобранные товары, полностью готовые к дальнейшей работе.</div>
+                </div>
+
+                <a href="#" class="default-button">Перейти в раздел</a>
+            </div>
+
+            <img src="assets/images/second_hand_category.png" alt="Телефоны">
+        </section>
+
+        <section class="services">
+            <div class="service">
+                <div class="service-content">
+                    <div class="service-text">
+                        <h2>Вернем приложения</h2>
+                        <div>Установим приложения, удаленные из App Store.</div>
+                    </div>
+
+                    <a href="#" class="border-button">Узнать подробности</a>
+                </div>
+
+                <img src="assets/images/service_photo1.png" alt="Женщина с телефоном">
+                <img src="assets/icons/partners2.svg" alt="Партнеры">
+            </div>
+
+            <div class="service">
+                <div class="service-content">
+                    <div class="service-text">
+                        <h2>Перенесем ваши данные</h2>
+                        <div>Бесплатно перенесем все важное со старого на новое или Б/У устройство.</div>
+                    </div>
+
+                    <a href="#" class="border-button">Узнать подробности</a>
+                </div>
+
+                <img src="assets/images/service_photo2.png" alt="Телефоны">
+            </div>
+        </section>
+
+        <section class="advantages">
+            <h2>Преимущества <span>Pro:Store</span></h2>
+
+            <div class="advantage">
+                <div class="advantages-list">
+                    <div class="advantage-list">
+                        <img src="assets/icons/check.svg" alt="check">
+
+                        <h3>Новая техника Apple доступна к покупке в любое время.</h3>
+                    </div>
+
+                    <div class="advantage-list">
+                        <img src="assets/icons/settings.svg" alt="settings">
+
+                        <h3>Качественный и быстрый ремонт вашей техники.</h3>
+                    </div>
+
+                    <div class="advantage-list">
+                        <img src="assets/icons/clock.svg" alt="clock">
+
+                        <h3>Trade-in в интересах клиентов с оценкой за 5 минут.</h3>
+                    </div>
+
+                    <div class="advantage-list">
+                        <img src="assets/icons/heart.svg" alt="heart">
+
+                        <h3>Магазины, где царит лояльность, честность и открытость.</h3>
+                    </div>
+                </div>
+
+                <img src="assets/images/advantage_photo.png" alt="Сотрудник с телефонами">
+            </div>
+
+            <a href="#" class="default-button">Подробнее о нас</a>
+        </section>
+    </main>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-container-info">
+            <div class="footer-info">
+                <img src="assets/icons/logo.svg" alt="Логотип">
+
+                <div class="nav-elem social">
+                    <a href="#">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_22_108)">
+                                <path d="M15 0H14.9999C6.71568 0 0 6.71568 0 14.9999V15C0 23.2842 6.71568 29.9999 14.9999 29.9999H15C23.2842 29.9999 29.9999 23.2842 29.9999 15V14.9999C29.9999 6.71568 23.2842 0 15 0Z"
+                                      fill="#292929"/>
+                                <path d="M14.9968 12.6662C13.7114 12.6662 12.6625 13.7151 12.6625 15.0005C12.6625 16.2859 13.7114 17.3348 14.9968 17.3348C16.2822 17.3348 17.3311 16.2859 17.3311 15.0005C17.3311 13.7151 16.2822 12.6662 14.9968 12.6662ZM21.998 15.0005C21.998 14.0338 22.0067 13.0759 21.9524 12.111C21.8982 10.9903 21.6425 9.99561 20.823 9.17606C20.0017 8.35475 19.0087 8.10083 17.888 8.04654C16.9213 7.99225 15.9634 8.00101 14.9985 8.00101C14.0319 8.00101 13.074 7.99225 12.1091 8.04654C10.9883 8.10083 9.99366 8.3565 9.17411 9.17606C8.35279 9.99736 8.09887 10.9903 8.04459 12.111C7.9903 13.0777 7.99906 14.0356 7.99906 15.0005C7.99906 15.9654 7.9903 16.925 8.04459 17.89C8.09887 19.0107 8.35454 20.0054 9.17411 20.8249C9.99541 21.6462 10.9883 21.9002 12.1091 21.9545C13.0757 22.0088 14.0336 22 14.9985 22C15.9652 22 16.9231 22.0088 17.888 21.9545C19.0087 21.9002 20.0034 21.6445 20.823 20.8249C21.6442 20.0036 21.8982 19.0107 21.9524 17.89C22.0085 16.925 21.998 15.9671 21.998 15.0005ZM14.9968 18.5922C13.0092 18.5922 11.4051 16.9881 11.4051 15.0005C11.4051 13.0129 13.0092 11.4088 14.9968 11.4088C16.9844 11.4088 18.5885 13.0129 18.5885 15.0005C18.5885 16.9881 16.9844 18.5922 14.9968 18.5922ZM18.7356 12.1005C18.2715 12.1005 17.8967 11.7258 17.8967 11.2617C17.8967 10.7977 18.2715 10.4229 18.7356 10.4229C19.1996 10.4229 19.5743 10.7977 19.5743 11.2617C19.5745 11.3719 19.5529 11.481 19.5109 11.5829C19.4687 11.6847 19.407 11.7772 19.329 11.8552C19.2511 11.9331 19.1586 11.9949 19.0567 12.037C18.9549 12.0791 18.8458 12.1007 18.7356 12.1005Z"
+                                      fill="white"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_22_108">
+                                    <rect width="30" height="30" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+
+                    <a href="#">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_22_111)">
+                                <path d="M15 0H14.9999C6.71568 0 0 6.71568 0 14.9999V15C0 23.2842 6.71568 29.9999 14.9999 29.9999H15C23.2842 29.9999 29.9999 23.2842 29.9999 15V14.9999C29.9999 6.71568 23.2842 0 15 0Z"
+                                      fill="#292929"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M7.35712 14.5289C11.4914 12.7276 14.2483 11.5401 15.6277 10.9664C19.5662 9.32824 20.3846 9.04368 20.918 9.03428C21.0353 9.03221 21.2976 9.06129 21.4675 9.19916C21.611 9.31558 21.6505 9.47285 21.6694 9.58323C21.6883 9.69361 21.7118 9.94505 21.6931 10.1415C21.4797 12.384 20.5562 17.826 20.0863 20.3376C19.8875 21.4004 19.4961 21.7567 19.1171 21.7916C18.2936 21.8674 17.6682 21.2473 16.8705 20.7244C15.6223 19.9062 14.9172 19.3969 13.7056 18.5985C12.3054 17.6758 13.2131 17.1686 14.011 16.3398C14.2199 16.1229 17.8485 12.8224 17.9188 12.5229C17.9276 12.4855 17.9357 12.3459 17.8528 12.2722C17.7699 12.1985 17.6475 12.2237 17.5592 12.2438C17.434 12.2722 15.44 13.5901 11.5771 16.1976C11.0111 16.5863 10.4985 16.7757 10.0392 16.7657C9.53279 16.7548 8.55874 16.4794 7.83463 16.2441C6.94648 15.9554 6.2406 15.8027 6.30207 15.3124C6.33409 15.057 6.68577 14.7959 7.35712 14.5289Z"
+                                      fill="white"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_22_111">
+                                    <rect width="30" height="30" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+
+                    <a href="#">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_22_114)">
+                                <path d="M14.9995 0H14.9994C6.7152 0 -0.000488281 6.71568 -0.000488281 14.9999V15C-0.000488281 23.2842 6.7152 29.9999 14.9994 29.9999H14.9995C23.2837 29.9999 29.9994 23.2842 29.9994 15V14.9999C29.9994 6.71568 23.2837 0 14.9995 0Z"
+                                      fill="#292929"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M22.1942 11.4094C22.3057 11.0379 22.1942 10.7778 21.6741 10.7778H19.9404C19.4945 10.7778 19.2964 11.0131 19.1849 11.2732C19.1849 11.2732 18.3057 13.428 17.0549 14.815C16.6462 15.2237 16.4729 15.3475 16.25 15.3475C16.1385 15.3475 15.9775 15.2237 15.9775 14.8521V11.4094C15.9775 10.9636 15.8537 10.7778 15.4822 10.7778H12.7577C12.4853 10.7778 12.3119 10.9884 12.3119 11.1741C12.3119 11.5952 12.9311 11.6942 13.0054 12.8583V15.4094C13.0054 15.9667 12.9063 16.0658 12.6834 16.0658C12.1014 16.0658 10.6648 13.911 9.82271 11.4342C9.64934 10.976 9.48835 10.7778 9.04253 10.7778H7.30878C6.81343 10.7778 6.71436 11.0131 6.71436 11.2732C6.71436 11.7314 7.29639 14.01 9.45119 17.0193C10.8877 19.075 12.9063 20.1896 14.7391 20.1896C15.8413 20.1896 15.9775 19.9419 15.9775 19.5209V17.9605C15.9775 17.4651 16.0766 17.3661 16.4357 17.3661C16.6958 17.3661 17.1292 17.4899 18.1571 18.4806C19.3336 19.6571 19.5317 20.1896 20.188 20.1896H21.9218C22.4171 20.1896 22.6648 19.9419 22.5162 19.4589C22.3552 18.976 21.7979 18.2701 21.0549 17.428C20.6462 16.945 20.0394 16.4373 19.8661 16.1772C19.606 15.8428 19.6803 15.6942 19.8661 15.4094C19.8661 15.397 21.9837 12.4249 22.1942 11.4094Z"
+                                      fill="white"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_22_114">
+                                    <rect width="30" height="30" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+
+                <div>Сайт носит информационный характер и не является публичной офертой, определяемой положениями Статьи
+                    437(2) Гражданского кодекса РФ.
+                </div>
+            </div>
+
+            <div class="footer-catalog">
+                <h4>Каталог</h4>
+
+                <div class="footer-catalog-content">
+                    <a href="#">iPhone</a>
+                    <a href="#">MacBook</a>
+                    <a href="#">Аудио</a>
+                    <a href="#">Watch</a>
+                    <a href="#">iPad</a>
+                    <a href="#">Аксессуары</a>
+                    <a href="#">Консоли</a>
+                    <a href="#">Dyson</a>
+                    <a href="#">Б/У устройства</a>
+                </div>
+            </div>
+
+            <div class="footer-nav">
+                <h4>Навигация</h4>
+
+                <div class="footer-nav-content">
+                    <a href="#">О компании</a>
+                    <a href="#">Trade-in</a>
+                    <a href="#">Б/У устройства</a>
+                    <a href="#">Скидки и акции</a>
+                    <a href="#">Доставка и оплата</a>
+                    <a href="#">Гарантии, обмен, возврат</a>
+                </div>
+            </div>
+
+            <div class="footer-contacts">
+                <div class="phone">
+                    <img src="assets/icons/phone.svg" alt="Номер телефона">
+                    <a href="tel:89063380287">+ 7 (906) 338-02-87</a>
+                </div>
+
+                <div class="time">
+                    <div class="time-title">
+                        <img src="assets/icons/time.svg" alt="Время работы">
+                        <h4>Время работы:</h4>
+                    </div>
+
+                    <div class="time-cities">
+                        <div>Тольятти: с 10:00 до 21:00</div>
+                        <div>Самара: с 10:00 до 22:00</div>
+                    </div>
+                </div>
+
+                <div class="address">
+                    <div class="address-title">
+                        <img src="assets/icons/gps.svg" alt="Наши адреса">
+                        <h4>Наши адреса:</h4>
+                    </div>
+
+                    <div class="address-cities">
+                        <div>Тольятти, ул. Мира, 73</div>
+                        <div>Тольятти, ул. Дзержинского, 21 (ТРК Капитал)</div>
+                        <div>Самара, ул. Красноармейская, 131 (ТК Гудок)</div>
+                        <div>Самара, ул. Южное шоссе, 5 (ТК Амбар)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-politics">
+            <div class="individual-entrepreneur">
+                <div>ИП Краснов С.С. ИНН 632306399021</div>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+
+            <div class="contact">
+                <div class="feedback">
+                    <img src="assets/icons/feedback.svg" alt="Обратная связь">
+                    <a href="#">Обратная связь</a>
+                </div>
+
+                <a href="#" id="develop">Разработка сайта</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
