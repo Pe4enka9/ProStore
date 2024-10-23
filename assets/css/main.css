@@ -888,6 +888,10 @@ footer a:hover {
     color: #0071d8;
 }
 
+@media (max-width: 576px) {
+
+}
+
 @media (max-width: 768px) {
     .catalog-card {
         height: 250px;
@@ -962,5 +966,9 @@ footer a:hover {
 
     .advantages-list {
         width: 100%;
+    }
+
+    .footer-container {
+        width: 90%;
     }
 }
