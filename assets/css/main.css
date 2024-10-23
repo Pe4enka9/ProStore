@@ -130,7 +130,7 @@ header {
 }
 
 .nav-container {
-    width: 70%;
+    width: 90%;
 
     display: flex;
     justify-content: center;
@@ -498,8 +498,6 @@ header nav a:hover {
     width: calc(50% - 15px);
     height: 500px;
 
-    padding: 30px 30px 0 30px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -509,6 +507,8 @@ header nav a:hover {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
+
+    overflow: hidden;
 }
 
 .category-for:last-child {
@@ -520,6 +520,8 @@ header nav a:hover {
 }
 
 .category-for-text {
+    padding: 30px 30px 0 30px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -542,16 +544,16 @@ header nav a:hover {
 }
 
 .categories-for-image-container {
-    height: 350px;
-
-    display: flex;
-    justify-content: center;
+    width: 100%;
 
     overflow: hidden;
 }
 
 .categories-for-image-container img {
+    width: 100%;
     height: 100%;
+
+    object-fit: contain;
 }
 
 .second-hand {
@@ -886,7 +888,25 @@ footer a:hover {
     color: #0071d8;
 }
 
+@media (max-width: 768px) {
+    .catalog-card {
+        height: 250px;
+    }
+
+    .category-for {
+        height: 350px;
+    }
+}
+
 @media (max-width: 991px) {
+    .container {
+        width: 90%;
+    }
+
+    .slogan h1 {
+        font-size: 40px;
+    }
+
     .trade {
         flex-direction: column;
     }
@@ -899,37 +919,23 @@ footer a:hover {
         width: 100%;
     }
 
-    .categories-for {
-        flex-direction: column;
+    .category-for-text h2,
+    .second-hand-text h2,
+    .service-text h2 {
+        font-size: 25px;
     }
 
-    .category-for {
-        width: 100%;
-    }
-
-    .second-hand-text h2 {
-        font-size: 20px;
-    }
-
-    .second-hand-text div {
+    .category-for-text div,
+    .second-hand-text div,
+    .service-text div {
         font-size: 15px;
     }
-}
 
-@media (max-width: 768px) {
-    .header-slogan {
+    .advantage {
         flex-direction: column;
     }
 
-    .slogan {
-        width: 100%;
-    }
-
-    .slogan h1 {
-        font-size: 40px;
-    }
-
-    .slogan-image {
+    .advantages-list {
         width: 100%;
     }
 }
